@@ -17,18 +17,21 @@ function App() {
     <div>
       <Title />
       <div>
+        <input type="text" onChange={(event)=>{
+          console.log(event.target.value)
+        }} />
+        <button>Add todo</button>
+      </div>
+      <div>
         <div className="todo__wrapper">
           <Todo
            title = "Finish FES"
-           paragraph = "Code along and lock in"
            />
           <Todo
             title = "Finish Interview Section"
-            paragraph = "Get ready for the next interview and grind leet code"
            />
           <Todo
            title = "Land a job"
-           paragraph = "Apply everywhere and reach out to recruiters"
           />
         </div>
       </div>
